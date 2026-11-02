@@ -19,7 +19,7 @@ st.set_page_config(page_title="지점별 매출 분석 대시보드", layout="wi
 @st.cache_data
 def load_data():
     # 실제 환경에 맞게 경로를 조정하여 데이터를 로드합니다.
-    df = pd.read_excel("https://github.com/hsw8555/sales/blob/main/Sales.xlsx?raw=true")
+    df = pd.read_excel("Sales.xlsx")
     df.dropna(inplace=True)
     return df
 
